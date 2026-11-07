@@ -16,6 +16,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  /* 모바일에서 화면 전체가 당겨지는(바운스) 스크롤 방지 — 스크롤은 앱 안쪽 영역에서만 */
+  overscroll-behavior: none;
 }
 
 body {

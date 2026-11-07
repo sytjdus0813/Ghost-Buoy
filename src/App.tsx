@@ -14,6 +14,7 @@ import CommunityPopular from './screens/explore/CommunityPopular'
 import CommunityRecent from './screens/explore/CommunityRecent'
 import CommunityFollowing from './screens/explore/CommunityFollowing'
 import ExploreProfile from './screens/explore/ExploreProfile'
+import ExploreSchedule from './screens/explore/ExploreSchedule'
 import DeviceMain from './screens/device/DeviceMain'
 import DeviceSystem from './screens/device/DeviceSystem'
 import DeviceAdd from './screens/device/DeviceAdd'
@@ -46,6 +47,7 @@ export default function App() {
             {/* ⚠️ 포인트 후기 화면은 Figma에 없음 → 최근 목록 재사용 */}
             <Route path="/explore/community/review" element={<CommunityRecent />} />
             <Route path="/explore/profile" element={<ExploreProfile />} />
+            <Route path="/explore/schedule" element={<ExploreSchedule />} />
 
             <Route path="/device" element={<DeviceMain />} />
             <Route path="/device/system" element={<DeviceSystem />} />

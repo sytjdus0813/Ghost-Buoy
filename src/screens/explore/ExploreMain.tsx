@@ -28,7 +28,7 @@ export default function ExploreMain() {
       <div className={styles.content}>
 
         <div className={styles.cards}>
-          <Link to="/explore/community" className={styles.schedule}>
+          <Link to="/explore/schedule" className={styles.schedule}>
             <span className={styles.cardLabel}>내 일정</span>
             <span className={styles.cardTitle}>10/27 강릉 다이브</span>
             <span className={styles.cardSub}>참가 3/4명 · D-3</span>

@@ -25,3 +25,8 @@
 .withNav {
   padding-bottom: calc(var(--home-h) + 64px + 16px);
 }
+
+/* 줄여서 한 화면에 맞춘 상태: 레이아웃 높이는 그대로라 스크롤만 막음 */
+.fitted {
+  overflow: hidden;
+}
