@@ -1,0 +1,61 @@
+/*
+ * Figma Variables → CSS 변수 (PRD 7장: 이름을 그대로 옮김)
+ * 출처: Ghost-Buoy / UI 2 페이지
+ * 주의: "backgournd-line-50"은 Figma 원본 이름의 오타를 그대로 유지한 것.
+ *       Figma에서 이름을 고치면 여기도 함께 바꿔야 함.
+ */
+:root {
+  --background: #f5f5f5;
+  --background-line: #575757;
+  --backgournd-line-50: rgba(87, 87, 87, 0.5);
+  --disabled: #d2d2d2;
+  --black: #111111;
+  --button: #9eefff;
+  --blueblack: #001115;
+  --point: #00c4eb;
+  --main-50: rgba(158, 239, 255, 0.5);
+  /* Figma: schemes/on-primary (CSS 변수 이름에 '/'를 쓸 수 없어 '-'로 바꿈) */
+  --schemes-on-primary: #ffffff;
+
+  /* Variables로 등록되지 않았지만 여러 화면에서 반복되는 값 */
+  --chrome-fill: rgba(189, 189, 189, 0.5); /* navbar, 헤더 원형 버튼 */
+  --nav-inactive: #474747;
+  --shadow-card: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+
+  /* 별칭 (로그인 화면) */
+  --text-primary: var(--black);
+  --hero-bg: var(--button);
+
+  /* ⚠️ 디자인에 없는 값: 로그인 버튼 활성 상태. 팀에서 확정 후 교체 */
+  --btn-active: var(--black);
+
+  --font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-noto: 'Noto Sans KR', var(--font-family);
+
+  --point2: #ff6a13;
+  --point-base: #ffe2d1;
+  /* Figma: surface/stroke, surface/pill, schemes/outline, schemes/primary-container */
+  --surface-stroke: rgba(255, 255, 255, 0.1);
+  --surface-pill: rgba(255, 255, 255, 0.1);
+  --schemes-outline: #6f797b;
+  --schemes-primary-container: #9eefff;
+  /* Figma: status/success */
+  --status-success: #34d399;
+  /* Figma: color, bg/elevated, bg/base, text/tertiary, 색상 */
+  --color: #ffffff;
+  --bg-elevated: #0c1828;
+  --bg-base: #060d18;
+  --text-tertiary: rgba(243, 247, 251, 0.38);
+  --색상: #7a7a7a;
+
+  /* 기기 영역: 휴대폰에서는 실제 safe-area, 데스크톱 미리보기에서는 Figma 값 */
+  --status-h: env(safe-area-inset-top, 0px);
+  --home-h: max(12px, env(safe-area-inset-bottom, 0px));
+}
+
+@media (min-width: 520px) {
+  :root {
+    --status-h: 60px;
+    --home-h: 34px;
+  }
+}

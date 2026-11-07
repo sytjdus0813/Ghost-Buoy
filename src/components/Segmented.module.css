@@ -1,0 +1,44 @@
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-noto);
+  line-height: 1.28;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.24px;
+  color: #575757;
+}
+
+.track {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 99px;
+  background: #f3f7fb;
+}
+
+.option {
+  flex: 1 0 0;
+  min-width: 0;
+  padding: 9px 0;
+  border: 0;
+  border-radius: 99px;
+  background: none;
+  font-family: var(--font-noto);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.28;
+  letter-spacing: -0.28px;
+  color: #575757;
+  cursor: pointer;
+}
+
+.on {
+  background: #9eefff;
+  font-weight: 700;
+  color: #001115;
+}

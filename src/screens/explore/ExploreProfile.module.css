@@ -1,0 +1,290 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 16px;
+  font-family: var(--font-noto);
+  line-height: 1.3;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  position: relative;
+  width: 92px;
+  height: 98px;
+  flex-shrink: 0;
+}
+
+.ring,
+.photo {
+  position: absolute;
+  display: block;
+}
+
+.ring {
+  left: 0;
+  top: 0;
+}
+
+.photo {
+  left: 6px;
+  top: 6px;
+}
+
+.lv {
+  position: absolute;
+  left: 27px;
+  top: 77px;
+  padding: 2px 8px;
+  border: 2px solid #f5f5f5;
+  border-radius: 99px;
+  background: #9eefff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: #001115;
+}
+
+.follow {
+  display: flex;
+  flex: 1 0 0;
+  justify-content: space-between;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.follow span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: -0.24px;
+  color: #575757;
+}
+
+.follow b {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.38px;
+  color: #111;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bio b {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.34px;
+  color: #111;
+}
+
+.bio small {
+  font-size: 12px;
+  letter-spacing: -0.24px;
+  color: #575757;
+}
+
+.bio p {
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: -0.26px;
+  color: #111;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-radius: 18px;
+  background: #fff;
+}
+
+.summary i {
+  width: 1px;
+  height: 26px;
+  background: #ececec;
+}
+
+.sum {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  font-size: 11px;
+  letter-spacing: -0.22px;
+  color: #575757;
+  white-space: nowrap;
+}
+
+.sum > span {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.sum b {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.32px;
+  color: #111;
+}
+
+.sum small {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.primary,
+.secondary,
+.buddy {
+  height: 44px;
+  border: 0;
+  border-radius: 99px;
+  font-family: var(--font-noto);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+  cursor: pointer;
+}
+
+.primary,
+.secondary {
+  flex: 1 0 0;
+  min-width: 0;
+}
+
+.primary {
+  background: #9eefff;
+  color: #001115;
+}
+
+.secondary {
+  background: #d2d2d2;
+  color: #061018;
+}
+
+.buddy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  flex-shrink: 0;
+  background: #d2d2d2;
+}
+
+.buddy img {
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.tab,
+.tabOn {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 2px 0 0;
+  border: 0;
+  background: none;
+  font-family: var(--font-noto);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.28px;
+  color: #575757;
+  cursor: pointer;
+}
+
+.tabOn {
+  font-weight: 700;
+  color: #111;
+}
+
+.underline {
+  width: 100%;
+  height: 2px;
+}
+
+.tabOn .underline {
+  background: #111;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.post {
+  position: relative;
+  height: 117px;
+  border-radius: 14px;
+  overflow: clip;
+}
+
+.post > img:first-child {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.replay {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px 3px 7px;
+  border-radius: 99px;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: -0.18px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.replay img {
+  display: block;
+}
+
+.multi {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  display: block;
+}
+
+.more {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 13px;
+  color: var(--background-line);
+}

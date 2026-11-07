@@ -1,0 +1,45 @@
+.navbar {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: var(--home-h);
+  height: 64px;
+  border-radius: 32px;
+  background: var(--chrome-fill);
+  /* Figma 렌더에서 뒤 콘텐츠가 흐리게 비침 (코드 출력에는 값이 없어 근사치) */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  overflow: clip;
+  z-index: 20;
+}
+
+.items {
+  position: absolute;
+  left: calc(50% + 0.5px);
+  top: 10px;
+  display: flex;
+  align-items: center;
+  transform: translateX(-50%);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 44px;
+  padding: 10px 16px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -0.35px;
+  color: var(--nav-inactive);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.active {
+  background: #fff;
+  color: #000;
+}

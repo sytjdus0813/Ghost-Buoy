@@ -1,0 +1,295 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 8px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.avatar > img {
+  position: absolute;
+  display: block;
+}
+
+.r1 {
+  left: 0;
+  top: 0;
+}
+
+.r2 {
+  left: 3px;
+  top: 3px;
+}
+
+.photo {
+  left: 7px;
+  top: 7px;
+}
+
+.lv {
+  position: absolute;
+  left: 31px;
+  top: 88px;
+  padding: 3px 8px;
+  border: 3px solid var(--bg-base);
+  border-radius: 99px;
+  background: linear-gradient(to right, #7dfae3, #00d5ff);
+  font-size: 11px;
+  font-weight: 700;
+  color: #061018;
+}
+
+.gap4 {
+  height: 4px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.48px;
+  color: var(--black);
+}
+
+.handle {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--background-line);
+  white-space: pre;
+  word-spacing: 3px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.license,
+.editBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 174px;
+  max-width: calc(50% - 5px);
+  height: 46px;
+  border-radius: 23px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.license {
+  border: 1px solid var(--surface-stroke);
+  background: var(--button);
+  color: var(--black);
+}
+
+.license img {
+  display: block;
+}
+
+.editBtn {
+  border: 0;
+  background: var(--disabled);
+  color: #061018;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  padding: 16px 8px;
+  border: 1px solid var(--backgournd-line-50);
+  border-radius: 24px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  filter: drop-shadow(0 8px 12px rgba(13, 26, 51, 0.06));
+  white-space: nowrap;
+}
+
+.stat {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+  font-size: 11px;
+  color: var(--background-line);
+}
+
+.stat + .stat {
+  border-left: 1px solid var(--backgournd-line-50);
+}
+
+.stat > span {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.stat b {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.44px;
+  color: var(--black);
+}
+
+.stat small {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badges,
+.goal {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  border: 1px solid var(--backgournd-line-50);
+  border-radius: 24px;
+}
+
+.badges {
+  gap: 16px;
+}
+
+.goal {
+  gap: 10px;
+}
+
+.head,
+.goalHead {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.head {
+  gap: 6px;
+}
+
+.head h2,
+.goalHead h2 {
+  margin: 0;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.head h2 {
+  font-size: 17px;
+  letter-spacing: -0.17px;
+}
+
+.goalHead h2 {
+  font-size: 15px;
+}
+
+.badgeCount {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--색상);
+}
+
+.spacer {
+  flex: 1 0 0;
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--background-line);
+}
+
+.more img {
+  display: block;
+}
+
+.badgeRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--background-line);
+  white-space: nowrap;
+}
+
+.badgeIcon,
+.lockIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+}
+
+.badgeIcon img,
+.lockIcon img {
+  display: block;
+}
+
+.lockIcon {
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.locked {
+  color: var(--backgournd-line-50);
+}
+
+.goalValue {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--색상);
+}
+
+.goalValue b {
+  font-weight: 600;
+  color: #111;
+}
+
+.bar {
+  position: relative;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--disabled);
+  overflow: clip;
+}
+
+.fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 10px;
+  max-width: 100%;
+  border-radius: 5px;
+  background: var(--background-line);
+}
+
+.goalText {
+  margin: 0;
+  font-size: 12px;
+  color: var(--background-line);
+}

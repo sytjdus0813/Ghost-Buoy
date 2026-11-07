@@ -1,0 +1,103 @@
+/* card/community-feed-recent: 393 전체 폭 */
+.list {
+  margin: 0 -8px;
+  padding: 0;
+  list-style: none;
+}
+
+/* card/commnity-upload 393 × 142 — Figma 절대 좌표를 기준 폭(393)에 맞춰 사용 */
+.item {
+  position: relative;
+  height: 142px;
+  border-bottom: 1px solid var(--schemes-outline);
+  overflow: clip;
+  font-family: var(--font-noto);
+}
+
+.thumb {
+  position: absolute;
+  left: 12px;
+  top: 9px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background: #fff;
+  object-fit: cover;
+}
+
+.title,
+.body {
+  position: absolute;
+  left: 120px;
+  right: 17px;
+  margin: 0;
+}
+
+/* Lable/Kr */
+.title {
+  top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  color: var(--black);
+}
+
+/* Caption/Kr */
+.body {
+  top: 56px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.3px;
+  color: var(--background-line);
+}
+
+.heart,
+.comment {
+  position: absolute;
+  display: block;
+}
+
+.heart {
+  left: 120px;
+  top: 107px;
+}
+
+.comment {
+  left: 160px;
+  top: 108px;
+}
+
+.time {
+  position: absolute;
+  right: 51px;
+  top: 109px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.3px;
+  color: var(--backgournd-line-50);
+  white-space: nowrap;
+}
+
+.bookmark {
+  position: absolute;
+  right: 17px;
+  top: 105px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.bookmark img {
+  display: block;
+}
+
+/* ⚠️ 저장된 상태는 Figma에 없음 — 임시로 투명도만 변경 */
+.bookmark[aria-pressed='false'] img {
+  opacity: 1;
+}
+
+.bookmark[aria-pressed='true'] img {
+  opacity: 0.4;
+}

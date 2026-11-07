@@ -1,0 +1,136 @@
+/* Figma frame: login 393 × 852 */
+.screen {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: max(42px, env(safe-area-inset-bottom));
+}
+
+/* dash: 377 × 523, 좌우 8, radius 30 */
+.hero {
+  position: relative;
+  height: 523px;
+  margin: 0 8px;
+  border-radius: 30px;
+  background: var(--hero-bg);
+  overflow: clip;
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  transform: translate(calc(-50% + 0.5px), calc(-50% + 0.5px));
+}
+
+.imageMain {
+  position: absolute;
+  left: -54px;
+  top: 201px;
+  width: 526px;
+  height: 355px;
+}
+
+.imageMain img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Title/Eng: Pretendard Bold 48, lh 1.35, ls -2.5% */
+.title {
+  position: absolute;
+  left: 22px;
+  top: 85px;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -1.2px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+
+/* Boby: Pretendard Regular 16, lh 1.35, ls -2.5% */
+.subtitle {
+  position: absolute;
+  left: 27px;
+  top: 157px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -0.4px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+
+/* loginset: 좌우 16, 세로 gap 16 */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 15px;
+  padding: 0 16px;
+}
+
+.eye {
+  display: flex;
+  flex-shrink: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.eye img {
+  display: block;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 16px;
+  padding: 0 4px;
+}
+
+.textButton {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--background-line);
+  cursor: pointer;
+}
+
+/* loginset2: 높이 36, padding 10 */
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  padding: 10px;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--background-line);
+  text-decoration: underline;
+  text-underline-position: from-font;
+  white-space: pre;
+}
+
+.link {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 13px;
+  line-height: 16px;
+  color: inherit;
+  text-decoration: inherit;
+  text-underline-position: inherit;
+  cursor: pointer;
+}

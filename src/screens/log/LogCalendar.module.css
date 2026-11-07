@@ -1,0 +1,104 @@
+/* Figma Frame 7233: y=118, 간격 24 */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.content > :first-child {
+  align-self: stretch;
+  padding: 0 8px;
+}
+
+.day {
+  align-self: stretch;
+  margin: 0;
+  padding: 10px 8px;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -3px;
+  color: var(--black);
+}
+
+.yearRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 361px;
+  max-width: calc(100% - 32px);
+  font-size: 32px;
+  line-height: 1.35;
+  letter-spacing: -0.8px;
+  color: var(--backgournd-line-50);
+  white-space: nowrap;
+}
+
+.yearRow b {
+  font-weight: 600;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  width: 377px;
+}
+
+.week {
+  display: flex;
+  gap: 47px;
+}
+
+.week span {
+  width: 8px;
+  height: 14px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.12px;
+  color: var(--backgournd-line-50);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+}
+
+.cell {
+  position: relative;
+  display: block;
+  width: 53px;
+  height: 53px;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+button.cell {
+  cursor: pointer;
+}
+
+.cell img {
+  display: block;
+}
+
+/* Variant2 숫자: inset 35.85% 37.74% 33.96% 37.74% */
+.todayNum {
+  position: absolute;
+  inset: 35.85% 0 33.96%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.3px;
+  color: #fff;
+}

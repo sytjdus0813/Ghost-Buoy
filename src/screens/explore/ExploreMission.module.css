@@ -1,0 +1,163 @@
+.modeLink {
+  display: flex;
+  text-decoration: none;
+}
+
+.missions {
+  display: flex;
+  gap: 8px;
+  margin-right: -8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.missions::-webkit-scrollbar {
+  display: none;
+}
+
+.mission {
+  position: relative;
+  width: 134px;
+  height: 191px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: clip;
+  color: #fff;
+}
+
+.missionBg {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  background: #000;
+  overflow: hidden;
+}
+
+.cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Figma: 첫 카드 이미지 크롭 (left -92.85%, top -0.22%, w 227.33%) */
+.cropped {
+  position: absolute;
+  left: -92.85%;
+  top: -0.22%;
+  width: 227.33%;
+  height: 100%;
+  max-width: none;
+  opacity: 0.9;
+}
+
+.tag {
+  position: absolute;
+  left: 7px;
+  top: 97px;
+  padding: 0 4px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  font-family: var(--font-noto);
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+/* Lable/Kr: Noto Sans KR Medium 14 / 20 */
+.missionTitle {
+  position: absolute;
+  left: 0;
+  top: 119px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 134px;
+  height: 40px;
+  margin: 0;
+  padding: 0 8px;
+  font-family: var(--font-noto);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.stars {
+  position: absolute;
+  left: 0;
+  top: 163px;
+  display: flex;
+  padding: 0 8px;
+}
+
+.stars img {
+  display: block;
+}
+
+.points {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 4px 14px 4px 16px;
+  list-style: none;
+  border: 1px solid var(--disabled);
+  border-radius: 24px;
+}
+
+.points li + li {
+  border-top: 1px solid var(--surface-stroke);
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  text-decoration: none;
+}
+
+.pointImg {
+  display: block;
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.pointText {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.pointName {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  white-space: nowrap;
+}
+
+.pointDesc {
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--background-line);
+}
+
+.rate {
+  padding: 5px 10px;
+  border-radius: 99px;
+  background: var(--main-50);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--background-line);
+}

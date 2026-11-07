@@ -1,0 +1,32 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.title {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.475px;
+  color: var(--black);
+  white-space: nowrap;
+}
+
+/* Caption/Kr: Noto Sans KR 12 / 16, -2.5% */
+.more {
+  display: flex;
+  align-items: center;
+  font-family: 'Noto Sans KR', var(--font-family);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.3px;
+  color: var(--backgournd-line-50);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.more img {
+  display: block;
+}

@@ -1,0 +1,64 @@
+/* card/team: 393 전체 폭, 좌우 8, 간격 15 */
+.groups {
+  display: flex;
+  gap: 15px;
+  margin: 0 -8px;
+  padding: 0 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.groups::-webkit-scrollbar {
+  display: none;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 83px;
+  flex-shrink: 0;
+}
+
+.group img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: #fff;
+  object-fit: cover;
+}
+
+/* Caption/Kr */
+.group span {
+  font-family: var(--font-noto);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.3px;
+  color: var(--black);
+  white-space: nowrap;
+}
+
+/* icon/write 70 × 70 (Figma: x 289, y 655 → navbar 위 29px) */
+.write {
+  position: absolute;
+  right: 34px;
+  bottom: calc(var(--home-h) + 93px);
+  z-index: 15;
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  border: 0;
+  border-radius: 50px;
+  background: var(--schemes-primary-container);
+  overflow: clip;
+  cursor: pointer;
+}
+
+.write img {
+  position: absolute;
+  left: 19px;
+  top: 19px;
+  display: block;
+}

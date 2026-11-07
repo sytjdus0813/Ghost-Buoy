@@ -1,0 +1,238 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 8px;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 270px;
+  padding: 18px 20px 20px;
+  border-radius: 28px;
+  overflow: clip;
+}
+
+.heroImg,
+.heroShade {
+  position: absolute;
+  inset: 0;
+}
+
+.heroImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroShade {
+  background: linear-gradient(to bottom, rgba(5, 13, 23, 0) 15%, rgba(5, 13, 23, 0.9));
+}
+
+.replayPill {
+  position: relative;
+  padding: 5px 10px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font-size: 11px;
+  font-weight: 500;
+  color: #fff;
+  white-space: pre;
+  font-variant-numeric: tabular-nums;
+}
+
+.heroBottom {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  width: 100%;
+}
+
+.heroText {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.heroText b {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.44px;
+  color: #fff;
+}
+
+.heroText small {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.track {
+  position: relative;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.25);
+  overflow: clip;
+}
+
+.progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(to right, #7dfae3, #9eefff);
+  transition: width 1s linear;
+}
+
+.play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 26px;
+  background: var(--button);
+  cursor: pointer;
+}
+
+.play img {
+  display: block;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+  border-radius: 22px;
+  background: var(--color);
+  filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.1));
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--black);
+  white-space: nowrap;
+}
+
+.spacer {
+  flex: 1 0 0;
+}
+
+.ghost {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--point);
+}
+
+/* 아바타 30, 겹침 -6 */
+.avatars {
+  display: flex;
+}
+
+.avatars img {
+  display: block;
+  margin-left: -6px;
+  border-radius: 50%;
+}
+
+.scenes {
+  display: flex;
+  gap: 8px;
+}
+
+.scene {
+  flex: 1 0 0;
+  min-width: 0;
+  height: 96px;
+  padding: 0;
+  border: 0;
+  border-radius: 16px;
+  background: none;
+  overflow: clip;
+  cursor: pointer;
+}
+
+.scene img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.noMedia {
+  margin: 0;
+  padding: 12px 8px;
+  font-size: 13px;
+  color: var(--backgournd-line-50);
+}
+
+/* Figma btn-set 자리 (56) */
+.btnSpace {
+  height: 56px;
+}
+
+/* 하단 고정 버튼: navbar 위 12px (Figma y=686) */
+.buttons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(var(--home-h) + 64px + 12px);
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.edit,
+.replay {
+  width: 184px;
+  max-width: calc(50% - 12px);
+  height: 56px;
+  border: 0;
+  border-radius: 28px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  color: #061018;
+  cursor: pointer;
+}
+
+.edit {
+  background: var(--disabled);
+}
+
+.replay {
+  background: var(--button);
+}
+
+/* ⚠️ 미디어 뷰어는 Figma에 없음 — 전체 화면으로 사진만 표시 */
+.viewer {
+  position: absolute;
+  inset: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: zoom-out;
+}
+
+.viewer img {
+  display: block;
+  max-width: 100%;
+  max-height: 80%;
+  object-fit: contain;
+}

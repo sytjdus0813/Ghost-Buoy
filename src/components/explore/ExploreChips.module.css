@@ -1,0 +1,23 @@
+.chips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 8px;
+  white-space: nowrap;
+}
+
+.chip {
+  padding: 8px 14px;
+  border-radius: 99px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--background-line);
+  text-decoration: none;
+}
+
+.active {
+  background: var(--blueblack);
+  color: var(--background);
+}

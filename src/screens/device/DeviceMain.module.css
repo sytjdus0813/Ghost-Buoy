@@ -1,0 +1,249 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0 8px;
+}
+
+/* SectionTitle 자체 padding 8 + 본문 8 = 16 */
+.titleWrap {
+  margin: 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px 20px 18px;
+  border-radius: 30px;
+  background: #fff;
+  text-decoration: none;
+}
+
+.heroTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.heroText {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 99px;
+  background: var(--button);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: var(--blueblack);
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.48px;
+  color: var(--black);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--background-line);
+}
+
+/* Ellipse 8px, 글로우 포함 SVG 20px이 -75% 바깥으로 */
+.dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+}
+
+.dot img {
+  position: absolute;
+  inset: -75%;
+  display: block;
+  width: 250%;
+  height: 250%;
+}
+
+.orb {
+  position: relative;
+  width: 124px;
+  height: 124px;
+  flex-shrink: 0;
+}
+
+.orb img {
+  position: absolute;
+  display: block;
+}
+
+/* Figma: 32 × 32 SVG를 124 크기로 채움 (size-full) */
+.orb1 {
+  left: 0;
+  top: 0;
+  width: 124px;
+  height: 124px;
+}
+
+.orb2 {
+  left: 6px;
+  top: 6px;
+}
+
+.orb3 {
+  left: 16px;
+  top: 16px;
+}
+
+.orbIcon {
+  position: absolute;
+  left: 39px;
+  top: 39px;
+  width: 46px;
+  height: 46px;
+  overflow: clip;
+}
+
+.orbIcon img {
+  left: 5.75px;
+  top: 1.92px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-radius: 18px;
+  background: #f3f7fb;
+}
+
+.stat {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  font-size: 11px;
+  color: var(--background-line);
+  white-space: nowrap;
+}
+
+.statValue {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.statValue > img {
+  display: block;
+}
+
+.statValue b {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.statValue b.semibold {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* icon/temperture 16 — SVG 22 높이가 위아래 -18.75% */
+.tempIcon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.tempIcon img {
+  position: absolute;
+  top: -18.75%;
+  bottom: -18.75%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 137.5%;
+}
+
+.robot {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border: 1px solid var(--disabled);
+  border-radius: 24px;
+  text-decoration: none;
+}
+
+.robotImg {
+  display: block;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.robotText {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.robotName {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.robotStatus {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--background-line);
+}
+
+.robotStatus img,
+.camera img {
+  display: block;
+}
+
+.camera {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 14px 9px 12px;
+  border-radius: 99px;
+  background: var(--disabled);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--blueblack);
+  white-space: nowrap;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 0;
+  border: 1px solid var(--disabled);
+  border-radius: 24px;
+}
