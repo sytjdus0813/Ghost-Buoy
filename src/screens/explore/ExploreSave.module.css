@@ -138,16 +138,19 @@
   color: var(--point-base);
 }
 
-.rareLight {
-  background: var(--main-50);
-  color: var(--background);
-}
-
+/* Figma icon/rare (47:4325): main 50 / blueblack, Bold */
 .rare {
   background: var(--main-50);
-  color: var(--button);
+  color: var(--blueblack);
 }
 
+/* ⚠️ 보통 배지는 Figma에 없음 → icon/rare 구성(진한 글자)에 회색 배경 */
+.normal {
+  background: var(--disabled);
+  color: var(--blueblack);
+}
+
+/* Figma icon/흔함 (47:4324): surface/pill / background-line, Medium */
 .common {
   background: var(--surface-pill);
   font-weight: 500;

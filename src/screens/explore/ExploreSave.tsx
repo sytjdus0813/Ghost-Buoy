@@ -14,12 +14,11 @@ import styles from './ExploreSave.module.css'
 type Rarity = '매우 희귀' | '희귀' | '보통' | '흔함'
 type Creature = { name: string; img?: string; rarity: Rarity; date: string; found: boolean }
 
-// 배지 색: 매우 희귀는 Figma icon/epic(point2 / point-base) 그대로.
-// ⚠️ 희귀·보통·흔함 배지는 Figma에 아직 없어서 이전 도감 디자인의 배지 색을 재사용
+// 배지: Figma icon/epic · icon/rare · icon/흔함 그대로. 보통은 Figma에 없어 icon/rare 구성을 따름
 const BADGE: Record<Rarity, string> = {
   '매우 희귀': styles.veryRare,
   희귀: styles.rare,
-  보통: styles.rareLight,
+  보통: styles.normal,
   흔함: styles.common,
 }
 
