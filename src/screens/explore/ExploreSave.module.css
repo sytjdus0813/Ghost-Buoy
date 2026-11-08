@@ -66,8 +66,11 @@
   filter: drop-shadow(0 8px 12px rgba(13, 26, 51, 0.06));
 }
 
-/* Figma: 미발견 카드 opacity 50 + icon/lock(48) */
-.locked {
+/* Figma: 미발견 카드 opacity 50 + icon/lock(48)
+   배지 글자색(#001115 등)이 흐려지지 않도록 배지만 빼고 나머지에 적용 */
+.locked .photoWrap,
+.locked .name,
+.locked .date {
   opacity: 0.5;
 }
 
