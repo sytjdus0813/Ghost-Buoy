@@ -228,6 +228,14 @@
   border: 0;
   background: rgba(0, 0, 0, 0.9);
   cursor: zoom-out;
+  animation: fade-in 0.2s ease both;
+}
+
+/* 화면 전체가 버튼이라 눌림 효과는 빼고, 사진만 커지며 등장 */
+.viewer:active,
+.viewer:hover {
+  scale: none;
+  filter: none;
 }
 
 .viewer img {
@@ -235,4 +243,5 @@
   max-width: 100%;
   max-height: 80%;
   object-fit: contain;
+  animation: pop-in 0.3s var(--ease-out) both;
 }

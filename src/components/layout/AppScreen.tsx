@@ -44,7 +44,7 @@ export default function AppScreen({ header, children, nav = true, background, ga
         {header}
       </div>
       <main ref={bodyRef} className={`${styles.body} ${nav ? styles.withNav : ''} ${scale < 1 ? styles.fitted : ''}`}>
-        <div ref={innerRef} style={fitStyle(scale)}>
+        <div ref={innerRef} className="page-enter" style={fitStyle(scale)}>
           {children}
         </div>
       </main>

@@ -5,6 +5,7 @@
 @import '@fontsource/noto-sans-kr/500.css';
 @import '@fontsource/noto-sans-kr/700.css';
 @import './tokens.css';
+@import './interactions.css';
 
 *,
 *::before,

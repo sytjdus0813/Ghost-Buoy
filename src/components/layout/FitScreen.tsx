@@ -10,7 +10,7 @@ export default function FitScreen({ children }: { children: ReactNode }) {
   const scale = useFitScale(boxRef, innerRef, FRAME_H)
   return (
     <div ref={boxRef} style={{ height: '100%', overflowY: scale < 1 ? 'hidden' : 'auto' }}>
-      <div ref={innerRef} style={fitStyle(scale)}>
+      <div ref={innerRef} className="page-enter" style={fitStyle(scale)}>
         {children}
       </div>
     </div>
