@@ -144,54 +144,6 @@
   font-weight: 500;
 }
 
-.actions {
-  display: flex;
-  gap: 8px;
-}
-
-.primary,
-.secondary,
-.buddy {
-  height: 44px;
-  border: 0;
-  border-radius: 99px;
-  font-family: var(--font-noto);
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 1.3;
-  letter-spacing: -0.3px;
-  cursor: pointer;
-}
-
-.primary,
-.secondary {
-  flex: 1 0 0;
-  min-width: 0;
-}
-
-.primary {
-  background: #9eefff;
-  color: #001115;
-}
-
-.secondary {
-  background: #d2d2d2;
-  color: #061018;
-}
-
-.buddy {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  flex-shrink: 0;
-  background: #d2d2d2;
-}
-
-.buddy img {
-  display: block;
-}
-
 .tabs {
   display: flex;
   border-bottom: 1px solid #e2e2e2;

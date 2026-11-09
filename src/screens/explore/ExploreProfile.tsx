@@ -4,7 +4,6 @@ import AppScreen from '../../components/layout/AppScreen'
 import { HeaderInto } from '../../components/layout/Header'
 import ring from '../../assets/community/profile-ring.svg'
 import photo from '../../assets/community/profile-photo.png'
-import iconAddBuddy from '../../assets/community/icon-add-buddy.svg'
 import iconPlay from '../../assets/community/icon-play-sm.svg'
 import iconMulti from '../../assets/community/icon-multi.svg'
 // 피드 그리드: Figma가 다른 화면과 같은 이미지 에셋을 재사용
@@ -36,7 +35,6 @@ const TABS = ['피드', '다이빙 로그', '도감'] as const
 /** Figma: explore/profile (39:16797) */
 export default function ExploreProfile() {
   const [tab, setTab] = useState<(typeof TABS)[number]>('피드')
-  const [followed, setFollowed] = useState(false)
 
   return (
     <AppScreen header={<HeaderInto title="내 프로필" backTo="/explore/community" />} gap={12}>
@@ -52,7 +50,7 @@ export default function ExploreProfile() {
               <b>48</b>게시물
             </span>
             <span>
-              <b>{followed ? 313 : 312}</b>팔로워
+              <b>312</b>팔로워
             </span>
             <span>
               <b>190</b>팔로잉
@@ -92,17 +90,6 @@ export default function ExploreProfile() {
           </span>
         </div>
 
-        <div className={styles.actions}>
-          <button type="button" className={styles.primary} onClick={() => setFollowed((v) => !v)}>
-            {followed ? '팔로잉' : '팔로우'}
-          </button>
-          <button type="button" className={styles.secondary}>
-            메시지
-          </button>
-          <button type="button" className={styles.buddy} aria-label="버디 추가">
-            <img src={iconAddBuddy} width={20} height={20} alt="" />
-          </button>
-        </div>
 
         <div className={styles.tabs} role="tablist">
           {TABS.map((t) => (
